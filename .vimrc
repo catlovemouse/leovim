@@ -1,10 +1,17 @@
+
+
+"vim +BundleInstall +qall
+
 syntax on
-set cursorline
+set hlsearch
+"set cursorline
 
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+au BufNewFile,BufRead  *.tmp set filetype=html
 
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -22,18 +29,18 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree.git'
-Bundle 'scrooloose/syntastic.git'
+"Bundle 'scrooloose/syntastic.git'
 Bundle 'majutsushi/tagbar'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
 filetype plugin indent on     " required!
